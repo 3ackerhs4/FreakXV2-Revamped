@@ -1,3 +1,11 @@
+	wait(0) local A_1 = "FreakX Loaded" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+	local notifSound = Instance.new("Sound",workspace)
+	notifSound.PlaybackSpeed = 1.5
+	notifSound.Volume = 0.15
+	notifSound.SoundId = "rbxassetid://170765130"
+	notifSound.PlayOnRemove = true
+	notifSound:Destroy()
+	game.StarterGui:SetCore("SendNotification", {Title = "Freak X", Text = "Scripts in gui not made by me", Icon = "rbxassetid://505845268", Duration = 5, Button1 = "Okay"})
 
 --[[
 AztupBrew(Fork of IronBrew2): obfuscation; Version 2.7.2
